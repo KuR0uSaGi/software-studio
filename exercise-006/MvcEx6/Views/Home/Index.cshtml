@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Competition Page";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 001 Form</title>
+</head>
+
+<body>
+    <form 
+        id="competition"
+        method="post"
+        asp-controller="Home"
+        asp-action="OnEnter"
+    >
+        <fieldset>
+            <legend><i>Contract Information</i></legend>
+
+            <label for="Fname">First name:</label>
+            <input type="text" id="Fname" name="Fname" required/><br />
+
+            <label for="Lname">Last name:</label>
+            <input type="text" id="Lname" name="Lname" required/><br />
+
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" required/><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset required>
+            <legend><i>Competition Question</i></legend>
+
+            How tall is the Eiffel Tower in Paris, France?<br />
+
+            <input type="radio" id="Ans1" name="Height" value="584" required/>
+            <label for="Ans1">584ft</label><br />
+
+            <input type="radio" id="Ans2" name="Height" value="784" />
+            <label for="Ans2">784ft</label><br />
+
+            <input type="radio" id="Ans3" name="Height" value="984" />
+            <label for="Ans3">984ft</label><br />
+
+            <input type="radio" id="Ans4" name="Height" value="1184" />
+            <label for="Ans4">1184ft</label><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend><i>Tiebreaker Question</i></legend>
+
+            <label for="paragraph-Ans">In 25 words or less, say why you would like to win $10,000:</label><br />
+            <textarea id="paragraph-Ans" name="Ans" rows="10" cols="38" required></textarea><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend><i>Enter Competition</i></legend>
+            <button type="summit">Enter Competition</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

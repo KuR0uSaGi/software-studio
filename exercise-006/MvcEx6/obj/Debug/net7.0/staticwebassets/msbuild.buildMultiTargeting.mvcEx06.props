@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\mvcEx06.props" />
+</Project>
